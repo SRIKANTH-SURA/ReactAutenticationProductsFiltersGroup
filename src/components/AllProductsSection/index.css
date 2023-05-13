@@ -1,0 +1,85 @@
+.all-products-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .all-products-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .all-products-container {
+    margin-left: 30px;
+    width: 70%;
+  }
+}
+
+.products-heading {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .products-heading {
+    font-size: 32px;
+  }
+}
+
+.products-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .products-loader-container {
+    width: 70%;
+  }
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.no-products-view,
+.failure-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.no-products-img,
+.failure-img {
+  width: 100%;
+}
+
+.no-products-heading,
+.failure-heading {
+  font-size: 24px;
+  color: #12022f;
+  padding: 5px 0px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.no-products-description,
+.failure-description {
+  font-size: 17px;
+  color: #64748b;
+  padding: 5px 0px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 0px 25px 0px;
+}
